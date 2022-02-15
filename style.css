@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+body{
+    background-color: #143662;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav li {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+nav li:hover{
+    background-color:#FFF;
+    color: #143662;
+    border-radius: 2px;
+}
+article{
+    display:flex;
+    justify-content: center;
+}
+.conteudo{
+    margin-top: 100px ;
+}
+.conteudo .tenis img{
+    max-width: 350px;
+    height: auto;
+}
+.conteudo .texto{
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+.conteudo .tenis{
+    flex: 1;
+    margin-left: 200px;
+    margin-top: 93px;
+}
+.conteudo .texto h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.conteudo .texto p{
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.conteudo .texto a{
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    color: hsl(214, 66%, 23%);
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #FFF;
+    border-radius: 2px; 
+}    
+.conteudo .texto a:hover{
+    background-color: #cee3fd;
+}
