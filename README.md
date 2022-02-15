@@ -1,2 +1,2 @@
 # Landing-page
-Exercício landing 
+Exercício landing page
