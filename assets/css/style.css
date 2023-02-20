@@ -27,33 +27,39 @@ header{
     width: 55px;
     cursor: pointer;
 }
-.container.header .menu nav ul{
+.container.header #menu nav ul{
     display: flex;
 }
-.container.header .menu nav ul li{
+.container.header #menu nav ul li{
     list-style: none;
 }
-.container.header .menu nav ul li a{
+.container.header #menu nav ul li a{
     text-decoration: none;
     color: #FFF;
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
 }
-.container.header .menu nav ul li a:hover{
+.container.header #menu nav ul li a:hover{
     color: #010117;
     background-color: #FFF;
     transition: .25s;
 }
-.container.header .menu .menu-bar{
+.container.header #menu nav ul li #buttonClose{
     display: none;
 }
-.container.header .menu .menu-bar .bar{
+.container.header #menu .menu-bar{
+    display: none;
+}
+.container.header #menu .menu-bar .bar{
     width: 20px;
     height: 3px;
     background-color: #FFF;
     margin: 3px;
     border-radius: 2px;
+}
+.container.header .background-menu{
+    width: 0%;
 }
 
 .conteudo{
@@ -150,12 +156,55 @@ header{
 }
 
 @media (max-width:426px){
-    .container.header .menu nav{
-        display: none;
+    .container.header #menu nav{
+        display: block;
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #030336;
+        position: fixed;
+        overflow: hidden;
+        z-index: 9;
+        transition: all 0.5s;
     }
-    .container.header .menu .menu-bar{
+    .container.header #menu nav ul{
+        display: block;
+    }
+    .container.header #menu nav ul li{
+        margin-top: 10px;
+    }
+    .container.header #menu nav ul li a{
+        font-size: 13px;
+    }
+    .container.header #menu nav ul li #buttonClose{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 7px;
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .container.header #menu nav ul li #buttonClose:hover{
+        color: #010117;
+        background-color: #FFF;
+        transition: .25s;
+    }
+    .container.header #menu .menu-bar{
         display: block;
         cursor: pointer;
+    }
+    .container.header .background-menu{
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.5;
+        position: fixed;
+        overflow: hidden;
+        z-index: 8;
+        transition: all 0.3s;
     }
 
     .conteudo{
